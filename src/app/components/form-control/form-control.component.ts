@@ -1,10 +1,4 @@
 import { Component } from '@angular/core';
-import { FormBuilder, 
-  FormGroup, 
-  FormArray, 
-  FormControl, 
-  // ValidationFn 
-} from '@angular/forms';
 
 @Component({
   selector: 'app-form-control',
