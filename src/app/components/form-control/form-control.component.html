@@ -1,0 +1,21 @@
+<div class="container">
+    <div>
+        <div>
+            <h3>{{checkedCountries}}</h3>
+        </div>
+    </div>
+    <div>
+        <div>
+            <ul>
+                <li>
+                    <input type="checkbox" [(ngModel)]="selectedCountry" (change)="checkUncheckAll()" /> <strong>Select/ Unselect All</strong>
+                </li>
+            </ul>
+            <ul>
+                <li *ngFor="let country of countryNames">
+                    <input type="checkbox" [(ngModel)]="country.isSelected" (change)="isAllSelected()" /> {{country.value}}
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
